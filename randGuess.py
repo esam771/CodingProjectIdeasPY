@@ -10,9 +10,9 @@ def main():
     print("Enter Num Range 0-x")
     bound = int(input())
 
-    rand = round(random.uniform(0, bound), 0)
+    rand = round(random.uniform(0, bound), 0) # generating random num to guess
 
-    if rand < 1:
+    if bound < 1: 
         quit()
 
     print("Enter guess, 1-x")
